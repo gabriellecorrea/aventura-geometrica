@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url('../../images/background_mario.jpg');
+}
+
+header {
+    background-color: #006400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+    padding-bottom: 0;
+    gap: 30px;
+    background-color: #D4FFBC;
+    width: 90%;
+}
+
+.formas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5%;
+    gap: 30px;
+}
+
+.circulo, 
+.cubo,
+.retangulo,
+.romboedro,
+.trapezoide,
+.poligono,
+.quadrado,
+.cuboide {
+    display: flex;
+    justify-content: center;
+    background-color: #D4FFBC;
+    height: 30em;
+    width: 19em;
+    border-radius: 10px
+}
+
+.formas button {
+    background-color: #006400;
+    width: 80%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 15px;
+   }
+   
+   button.botao {
+    text-transform: uppercase;
+    padding: 1.25em 2em;
+    background: #006400;
+    border: 2px solid #D4FFBC;
+    border-radius: 0.75em;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+   }
+   
+   button.botao::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #004B00;
+    border-radius: inherit;
+    box-shadow: 0 0 0 2px #006400, 0 0.625em 0 0 #7FCF6B;
+    -webkit-transform: translate3d(0, 0.75em, -1em);
+    transform: translate3d(0, 0.75em, -1em);
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+   }
+   
+   button.botao:hover {
+    background: #004B00;
+    -webkit-transform: translate(0, 0.25em);
+    transform: translate(0, 0.25em);
+   }
+   
+   button.botao:hover::before {
+    box-shadow: 0 0 0 2px #489838, 0 0.5em 0 0 #489838;
+    -webkit-transform: translate3d(0, 0.5em, -1em);
+    transform: translate3d(0, 0.5em, -1em);
+   }
+   
+   button.botao:active {
+    background: #003400;
+    -webkit-transform: translate(0em, 0.75em);
+    transform: translate(0em, 0.75em);
+   }
+   
+   button.botao:active::before {
+    -webkit-box-shadow: 0 0 0 2px, 0 0 ;
+    box-shadow: 0 0 0 2px, 0 0;
+    -webkit-transform: translate3d(0, 0, -1em);
+    transform: translate3d(0, 0, -1em);
+   }
+
+.formas a {
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+}
+
