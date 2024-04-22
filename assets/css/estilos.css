@@ -35,7 +35,8 @@ header {
     text-align: center;
 }
 
-.formas1 {
+.formas1,
+.formas2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -167,7 +168,13 @@ button.botao:active::before {
 } 
 
 .circ,
-.cub {
+.cub,
+.ret,
+.romb,
+.trap,
+.polig,
+.quad,
+.cuboid {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
