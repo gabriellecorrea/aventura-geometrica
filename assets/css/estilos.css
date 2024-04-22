@@ -13,7 +13,7 @@ header {
     height: 100px;
 }
 
-main {
+.main_home {
     background-image: url('../../images/background_mario.jpg');
     background-position: top center;
     width: 100vw;
@@ -159,3 +159,23 @@ button.botao:active::before {
 }
 
 .formas a {}
+
+.area_circ form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+} 
+
+.circ,
+.cub {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.area {
+    display: flex;
+    flex-direction: row;
+}
