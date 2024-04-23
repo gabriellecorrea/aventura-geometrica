@@ -185,4 +185,24 @@ button.botao:active::before {
 .area {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    height: 10em;
+}
+
+.box {
+    height: 2.5em;
+    border-radius: 5px;
+}
+
+.main_formas {
+    display: flex;
+    justify-content: right;
+}
+
+.calcular {
+    background-color: #D4FFBC;
+    width: 20em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
