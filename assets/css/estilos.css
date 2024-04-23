@@ -40,8 +40,8 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 5%;
-    gap: 30px;
+    padding: 3%;
+    gap: 20px;
 }
 
 .circulo,
