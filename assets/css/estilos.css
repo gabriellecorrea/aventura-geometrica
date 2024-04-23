@@ -107,7 +107,7 @@ button {
 
 button.botao {
     text-transform: uppercase;
-    padding: 1.25em 2em;
+    padding: 1em 2em;
     background: #006400;
     border: 2px solid #D4FFBC;
     border-radius: 0.75em;
@@ -159,8 +159,6 @@ button.botao:active::before {
     transform: translate3d(0, 0, -1em);
 }
 
-.formas a {}
-
 .area_circ form {
     display: flex;
     flex-direction: column;
@@ -190,8 +188,10 @@ button.botao:active::before {
 }
 
 .box {
-    height: 2.5em;
+    height: 3em;
     border-radius: 5px;
+    width: 80%;
+    margin-bottom: 2em;
 }
 
 .main_formas {
@@ -202,6 +202,7 @@ button.botao:active::before {
 .calcular {
     background-color: #D4FFBC;
     width: 20em;
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
