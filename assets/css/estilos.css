@@ -232,7 +232,10 @@ button.botao:active::before {
 
 .img-forma,
 .img-cubo,
-.img-ret {
+.img-ret,
+.img-romb,
+.img-trap,
+.img-polig {
     display: flex;
     justify-content: center;
 }
@@ -249,6 +252,18 @@ button.botao:active::before {
 .img-ret img {
     width: 65%;
     padding: 2em;
+}
+
+.img-romb img {
+    width: 50%;
+}
+
+.img-trap img {
+    width: 65%;
+}
+
+.img-polig img {
+    width: 50%;
 }
 
 .titulo-forma {
@@ -289,6 +304,10 @@ button.botao:active::before {
     font-size: large;
 }
 
+.paragrafo ul li img {
+    width: 20%;
+}
+
 .imagem {
     display: flex;
     justify-content: center;
@@ -297,6 +316,8 @@ button.botao:active::before {
 .imagem img {
     width: 30%;
     margin-bottom: 1em;
+    background-color: #ffffff;
+    padding: 0.5em;
 }
 
 .calcular {
