@@ -16,21 +16,53 @@
 <body>
     <header>
         <div class="logo">
-            <img src="" alt="">
+            <a class="link" href="index.html"><img src="images/logo.png" alt=""></a>
         </div>
     </header>
     <main class="main_formas">
+        <section class="sobre">
+            <div class="titulo-forma">
+                <h1>Retângulo</h1>
+            </div>
+            <div class="paragrafo">
+                <h2>Elementos de um Retângulo</h2>
+                <p>Por serem polígonos, os retângulos possuem os seguintes elementos:</p>
+                <ul>
+                    <li><b>Lados</b>: são os segmentos de reta que formam o contorno de um retângulo;</li>
+                    <li><b>Vértices</b>: são os pontos de encontro de dois lados;</li>
+                    <li><b>Diagonais</b>: são os segmentos de reta cujas extremidades são dois vértices não consecutivos do retângulo;</li>
+                    <li><b>Ângulos internos</b>: São os ângulos de 90°, formados no encontro de dois lados.</li>
+                </ul>
+                <div class="img-ret">
+                    <img src="images/imagem2-ret.jpg" alt="">
+                </div>
+            </div>
+            <div class="paragrafo">
+                <p>Os retângulos fazem parte do grupo dos quadriláteros conhecidos como paralelogramos. Os outros dois grupos de quadriláteros são trapézios e outros.</p>
+            </div>
+            <div class="paragrafo">
+                <h2>Propriedades de Retângulo</h2>
+                <p>Todo retângulo é paralelogramo, por isso, herda as características e propriedades dos paralelogramos, a saber:</p>
+                <ul>
+                    <li>Lados opostos são congruentes;</li>
+                    <li>Ângulos opostos são congruentes;</li>
+                    <li>As diagonais cortam-se ao meio;</li>
+                    <li>Ângulos adjacentes são suplementares;</li>
+                    <li>A soma dos ângulos internos de um retângulo é igual a 360°.</li>
+                </ul>
+            </div>
+        </section>
         <section class="calcular">
             <form action="">
                 <div class="ret">
-                    <label for="base">Base:</label>
+                    <label for="base" class="rotulo">Base:</label>
                     <input class="box" type="text" id="base" placeholder="Base" required>
-                    <label for="">Altura:</label>
+                    <label for="altura" class="rotulo">Altura:</label>
                     <input class="box" type="text" id="altura" placeholder="Altura" required>
                     <button type="submit" class="botao" id="enviar">Calcular a área</button>
                 </div>
                 <div class="area">
-                    <label for="resultado">Área: </label>
+                    <label for="resultado" class="rotulo">Área: </label>
                     <p id="resultado"></p>
                 </div>
             </form>

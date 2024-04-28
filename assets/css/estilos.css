@@ -6,17 +6,30 @@
 }
 
 header {
-    background-color: #006400;
+    background-color: #499931;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100px;
 }
 
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    width: 50%;
+}
+
+.link img {
+    width: 50%;
+}
+
 .main_home {
     background-image: url('../../images/background_mario.jpg');
     background-position: top center;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -29,7 +42,7 @@ header {
     padding: 2em;
     gap: 30px;
     margin-top: 2em;
-    background-color: #D4FFBC;
+    background-color: #B9FF9A;
     width: 90%;
     border-radius: 10px;
     text-align: center;
@@ -44,6 +57,19 @@ header {
     gap: 20px;
 }
 
+.nivel {
+    display: flex;
+    justify-content: center;
+    padding: 1.2em;
+    width: 50%;
+    border-radius: 10px;
+    background-color: #246F1E;
+    color: #F1FFD8;
+    font-weight: 800;
+    font-size: x-large;
+    box-shadow: 0 0 0 2px #f1ffd8, 0 0.625em 0 0 #A2EEA4;
+}
+
 .circulo,
 .cubo,
 .retangulo,
@@ -56,11 +82,12 @@ header {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: #D4FFBC;
+    background-color: #B9FF9A;
     height: 30em;
-    width: 19em;
+    width: 18em;
     border-radius: 10px;
-    padding: 0.5em;
+    padding: 0.5em 1em 0 1.5em;
+    text-align: center;
 }
 
 .text {
@@ -108,7 +135,7 @@ button {
 button.botao {
     text-transform: uppercase;
     padding: 1em 2em;
-    background: #006400;
+    background: #004C00;
     border: 2px solid #D4FFBC;
     border-radius: 0.75em;
     -webkit-transform-style: preserve-3d;
@@ -163,7 +190,7 @@ button.botao:active::before {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-} 
+}
 
 .circ,
 .cub,
@@ -196,14 +223,95 @@ button.botao:active::before {
 
 .main_formas {
     display: flex;
-    justify-content: right;
+    flex-direction: column;
+    align-items: center;
+    padding: 20%;
+    padding-top: 1em;
+    gap: 2em;
+}
+
+.img-forma,
+.img-cubo,
+.img-ret {
+    display: flex;
+    justify-content: center;
+}
+
+.img-forma img {
+    width: 80%;
+}
+
+.img-cubo img {
+    width: 60%;
+    padding: 2em;
+}
+
+.img-ret img {
+    width: 65%;
+    padding: 2em;
+}
+
+.titulo-forma {
+    text-align: center;
+    font-size: larger;
+}
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    background-color: #B9FF9A;
+    padding: 3em;
+    border-radius: 10px;
+}
+
+.paragrafo {
+    display: flex;
+    flex-direction: column;
+}
+
+.paragrafo p,
+.elem-cubo p  {
+    padding: 0.5em;
+    font-weight: 500;
+    font-size: large;
+}
+
+.paragrafo ul,
+.elem-cubo ul {
+    padding: 3em;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.paragrafo ul li,
+.elem-cubo ul li {
+    font-weight: 500;
+    font-size: large;
+}
+
+.imagem {
+    display: flex;
+    justify-content: center;
+}
+
+.imagem img {
+    width: 30%;
+    margin-bottom: 1em;
 }
 
 .calcular {
-    background-color: #D4FFBC;
-    width: 20em;
-    height: 100vh;
+    background-color: #B9FF9A;
+    width: 30em;
+    height: 30em;
+    padding: 2em;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    border-radius: 10px;
 }
+
+.rotulo {
+    font-weight: 600;
+}
+

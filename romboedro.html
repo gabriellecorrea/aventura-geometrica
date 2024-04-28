@@ -16,22 +16,62 @@
 <body>
     <header>
         <div class="logo">
-            <img src="" alt="">
+            <a class="link" href="index.html"><img src="images/logo.png" alt=""></a>
         </div>
     </header>
     <main class="main_formas">
+        <section class="sobre">
+            <div class="titulo-forma">
+                <h1>Romboedro</h1>
+            </div>
+            <div class="paragrafo">
+                <p>Um romboedro é um paralelepípedo limitado
+                    por seis faces losangulares tais que os pares
+                    de faces opostas são congruentes.</p>
+            </div>
+            <div class="paragrafo">
+                <p>Quando as
+                    seis faces são congruentes ele é denominado
+                    romboedro trigonal.</p>
+            </div>
+            <div class="paragrafo">
+                <p>Um romboedro tem 6
+                    faces, 12 arestas e 8 vértices.</p>
+            </div>
+            <div class="paragrafo">
+                <p>Como o quadrado também é um losango onde os ângulos são retos, o
+                    cubo é um caso especial de romboedro.</p>
+            </div>
+            <div class="paragrafo">
+                <p>Em torno de cada vértice encontram-se 3 faces (losangos) e existem 2
+                    tipos de vértices:</p>
+            </div>
+            <div class="paragrafo">
+                <p>Tipo 1: vértices em que os 3 losangos se encontram por um de seus
+                    ângulos agudos. Existem 2 vértices deste tipo. Na ilustração, os
+                    vértices A e B são do tipo 1. </p>
+                <div class="imagem"><img src="images/imagem1-romb.png" alt=""></div>
+            </div>
+            <div class="paragrafo">
+                <p>Tipo 2: vértices em que um dos losangos se encontra por um de seus
+                    ângulos agudos e os outros dois losangos por ângulos obtusos.
+                    Existem 6 vértices deste tipo. Na ilustração, os vértices C, D, E e F são
+                    do tipo 2.</p>
+                <div class="imagem"><img src="images/imagem2-romb.png" alt=""></div>
+            </div>
+        </section>
         <section class="calcular">
             <form action="">
                 <div class="romb">
-                    <label for="lado">Diagonal Maior:</label>
+                    <label for="diag_maior" class="rotulo">Diagonal Maior:</label>
                     <input class="box" type="text" id="diag_maior" placeholder="Diagonal Maior" required>
 
-                    <label for="">Diagonal Menor:</label>
+                    <label for="diag_menor" class="rotulo">Diagonal Menor:</label>
                     <input class="box" type="text" id="diag_menor" placeholder="Diagonal Menor" required>
                     <button type="submit" class="botao" id="enviar">Calcular a área</button>
                 </div>
                 <div class="area">
-                    <label for="resultado">Área: </label>
+                    <label for="resultado" class="rotulo">Área: </label>
                     <p id="resultado"></p>
                 </div>
             </form>

@@ -16,19 +16,65 @@
 <body>
     <header>
         <div class="logo">
-            <img src="" alt="">
+            <a class="link" href="index.html"><img src="images/logo.png" alt=""></a>
         </div>
     </header>
     <main class="main_formas">
+        <section class="sobre">
+            <div class="titulo-forma">
+                <h1>Cubo</h1>
+            </div>
+            <div class="paragrafo">
+                <p>Os elementos do cubo são os vértices, as arestas e as faces.</p>
+            </div>
+            <div class="paragrafo">
+                <p>O cubo possui 6 faces quadradas, 12 arestas e 8 vértices.</p>
+            </div>
+            <div class="paragrafo">
+                <p>A base do cubo é um quadrado de lado a. Assim, a área da base do cubo é dada pela fórmula:</p>
+                <div class="imagem"><img src="images/func1-cubo.png" alt=""></div>
+            </div>
+            <div class="paragrafo">
+                <p>A lateral do cubo é formada por quatro quadrados de lado a. Assim, a área da lateral do cubo é dada
+                    pela fórmula:</p>
+                <div class="imagem"><img src="images/func2-cubo.png" alt=""></div>
+            </div>
+            <div class="paragrafo">
+                <p>A área total do cubo corresponde à soma das áreas das seis faces. Assim, a área da lateral do cubo é
+                    dada pela fórmula:</p>
+                <div class="imagem"><img src="images/func3-cubo.png" alt=""></div>
+            </div>
+            <div class="paragrafo">
+                <p>O volume do cubo é obtido pelo produto entre a área da base e a altura. Isso se traduz na seguinte
+                    fórmula:</p>
+                <div class="imagem"><img src="images/func4-cubo.png" alt=""></div>
+            </div>
+            <div class="paragrafo">
+                <p>A diagonal d de um cubo de aresta a é dada pela fórmula:</p>
+                <div class="imagem"><img src="images/func5-cubo.png" alt=""></div>
+            </div>
+            <div class="elem-cubo">
+                <h2>Elementos da Composição do Cubo</h2>
+                <p>O cubo é um sólido geométrico que possui 6 faces quadradas, 12 arestas e 8 vértices.</p>
+                <div class="img-cubo">
+                    <img src="images/imagem-cubo.png" alt="">
+                </div>
+                <ul>
+                    <li><b>Vértices</b>: A, B, C, D, E, F, G e H.</li>
+                    <li><b>Arestas</b>: AB, BC, CD, DA, EF, FG, GH, HE, AE, BF, CG e DH.</li>
+                    <li><b>Faces</b>: ABCD, EFGH, ABFE, BCGF, CDHG, ADHE.</li>
+                </ul>
+            </div>
+        </section>
         <section class="calcular">
             <form action="">
                 <div class="cub">
-                    <label for="lado">Lado:</label>
+                    <label for="lado" class="rotulo">Lado:</label>
                     <input class="box" type="text" id="lado" placeholder="Lado" required>
                     <button type="submit" class="botao" id="enviar">Calcular a área</button>
                 </div>
                 <div class="area">
-                    <label for="resultado">Área: </label>
+                    <label for="resultado" class="rotulo">Área: </label>
                     <p id="resultado"></p>
                 </div>
             </form>
